@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const image = require('gulp-image');
 
 //Compile Sass & Inject Into Browser
 gulp.task('sass', function () {
@@ -45,4 +46,10 @@ gulp.task('html', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['js', 'html', 'fa', 'fonts', 'serve']);
+//Copy image
+gulp.task('image', function () {
+    return gulp.src('assets/img/*')
+        .pipe(gulp.dest('public_html/img'))
+});
+
+gulp.task('default', ['js', 'html', 'fa', 'fonts', 'image', 'serve']);
