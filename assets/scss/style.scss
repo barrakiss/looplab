@@ -34,11 +34,21 @@ body {
     opacity: 0.8;
   }
 
-  .fa{
+  .fa {
     color: $primary-color;
     background: #fff;
     padding: 4px;
     border-radius: 5px;
-    font-size: $font-size;
+    font-size: $icon-size;
+  }
+}
+
+#explore-section {
+  .fa {
+    color: #fff;
+    background: #333;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
   }
 }
