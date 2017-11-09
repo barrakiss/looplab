@@ -1,0 +1,11 @@
+@import "colors";
+
+body {
+  background: $bg-color;
+  color: $font-color;
+}
+
+.navbar {
+  border-bottom: $primary-color 3px solid;
+  opacity: 0.8;
+}
