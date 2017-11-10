@@ -30,7 +30,14 @@ body {
     border-radius: 5px;
     font-size: 30px; }
 
-#explore-section .fa {
+#explore-section .fa, #share-section .fa {
+  color: #fff;
+  background: #333;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px; }
+
+#create-section .fa {
   color: #fff;
   background: #333;
   padding: 4px;
